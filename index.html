@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TarjetasV2</title>
+	<style>
+		body{
+			margin: 0px;
+			font-family: sans-serif;
+		}
+		#contenido{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(45deg,#2c1111,#1a1a3c);;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		#contenidoItems{
+			width: 550px;
+			height: 400px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.items{
+			width: calc(50% - 30px);
+			height: 350px;
+			background-position: center;
+			background-size: cover;
+			border: none;
+			box-shadow: 0px 0px 10px black;
+			position: relative;
+			color: white;
+			overflow: hidden;
+			-webkit-transition:all .5s ease;
+			
+		}
+		.items:hover{
+			transform: scale(1.05) translateY(-5%);
+			-webkit-transition:all .5s ease;
+		}
+		
+		
+		.items:hover .items-mensaje{
+			transform: translateY(0%);
+			-webkit-transition:all .5s ease;
+		}
+		.items-mensajeTitlte{
+		
+			min-height: 35px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		}
+		.items-mensajeText{
+			padding-left: 20px;
+			font-size: 15px;
+			
+			
+		}
+		.items-mensaje{
+			
+			position: absolute;
+			background: rgba(8, 8, 8, 0.67);
+			width: 100%;
+			height: 150px;
+			bottom: 0px;
+			overflow: hidden;
+			-webkit-user-select:none;
+			transform: translateY(100px);
+			-webkit-transition:all .5s ease;
+			backdrop-filter:blur(4px);
+			
+		}
+	
+		.items-mensaje h1{
+			font-size: 20px;
+		}
+		.img1{
+			background-image: url('https://www.wallpapertip.com/wmimgs/30-305595_cool-iphone-backgrounds-rubiks-cube.jpg')
+		}
+		.img2{
+			background-image: url('https://www.hibridosyelectricos.com/media/hibridos/images/2019/07/01/2019070120564129309.jpg?width=1200&enable=upscale');
+		}
+	</style>
+</head>
+<body>
+
+<div id="contenido">
+	<div id="contenidoItems">
+		
+		<div class="items img1" >
+		
+			<div class="items-mensaje">
+				<div class="items-mensajeTitlte">
+					<h1>Cuebo Turkeza</h1>
+				</div>
+				<div class="items-mensajeText">
+					<p>Este es un cubo</p>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="items img2" >
+		
+			<div class="items-mensaje">
+				<div class="items-mensajeTitlte">
+					<h1>Molecula</h1>
+				</div>
+				<div class="items-mensajeText">
+					<p>Estas son moleculas de agua</p>
+				</div>
+				
+			</div>
+			
+		</div>
+
+		
+	</div>
+</div>
+	
+</body>
+</html>
